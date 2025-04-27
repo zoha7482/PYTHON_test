@@ -1,0 +1,6 @@
+list=[]
+input={"Ali": 20, "Sara": 17, "Omar": 19}
+for i in input:
+  if input[i]>=18:
+    list.append(i)
+print(list)

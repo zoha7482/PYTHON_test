@@ -1,0 +1,7 @@
+string = input("Enter a string: ")
+n = len(string)
+for i in range(n // 2):
+    if string[i] != string[n - 1 - i]:
+        print(i)
+        exit()
+print(-1)

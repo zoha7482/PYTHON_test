@@ -1,0 +1,8 @@
+def num(n):
+  total_sum = 0
+  for i in range(1, n+1):
+    if i % 3 == 0 or i % 5 == 0:
+      total_sum += i
+      x = total_sum
+  return x
+num(5)

@@ -1,0 +1,12 @@
+string = str(input("enter the string: "))
+character = str(input("enter the character: "))
+
+indices = []
+
+l = len(string)
+
+for i in range(l):
+    if string[i] == character:
+      indices.append(i)
+      x = indices
+print(x)

@@ -1,0 +1,9 @@
+num = int(input("enter the number: "))
+
+if num % 2 == 0:
+  doubled_num = num * 2
+  print(f"The doubled number is: {doubled_num}")
+
+else:
+  tripled_num = num * 3
+  print(f"The trippled number is: {tripled_num}")

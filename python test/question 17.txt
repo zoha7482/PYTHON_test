@@ -1,0 +1,25 @@
+brackets = input("Enter a string of brackets: ")
+stack = []
+balanced = True
+
+for char in brackets:
+  if char in '([{':
+    stack.append(char)
+  elif char in ')]}':
+    if not stack:
+      balanced = False
+      break
+    top = stack.pop()
+    if (char == ')' and top != '(') or \
+       (char == ']' and top != '[') or \
+       (char == '}' and top != '{'):
+      balanced = False
+      break
+
+if stack:
+  balanced = False
+
+if balanced:
+  print("Balanced")
+else:
+  print("Not Balanced")

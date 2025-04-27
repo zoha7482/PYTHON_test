@@ -1,0 +1,13 @@
+string = "loveleetcode"
+target = "e"
+n = len(string)
+distances = []
+
+for i in range(n):
+    min_distance = float('inf')
+    for j in range(n):
+        if string[j] == target:
+            min_distance = min(min_distance, abs(i - j))
+    distances.append(min_distance)
+
+distances

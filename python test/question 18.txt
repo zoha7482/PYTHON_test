@@ -1,0 +1,20 @@
+user_input = [1, 3, 2, 2, 3, 1, 3]
+
+counts = {}
+for num in user_input:
+    if num in counts:
+        counts[num] += 1
+    else:
+        counts[num] = 1
+        
+max_freq = 0
+most_frequent_num = None
+
+for num, freq in counts.items():
+    if freq > max_freq:
+        max_freq = freq
+        most_frequent_num = num
+    elif freq == max_freq and (most_frequent_num is None or num < most_frequent_num):
+        most_frequent_num = num
+        
+most_frequent_num

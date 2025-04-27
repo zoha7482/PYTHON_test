@@ -1,0 +1,13 @@
+def print_diamond(rows):
+    if rows % 2 == 0 or rows < 1:
+        print("Please enter an odd positive number of rows.")
+        return
+
+    for i in range(1, rows + 1, 2):
+        print(" " * ((rows - i) // 2) + "*" * i)
+
+    for i in range(rows - 2, 0, -2):
+        print(" " * ((rows - i) // 2) + "*" * i)
+        
+rows = int(input("Enter the number of rows (an odd number): "))
+print_diamond(rows)

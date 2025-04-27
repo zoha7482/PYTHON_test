@@ -1,0 +1,14 @@
+user_input = str(input("enter the string: "))
+
+string_to_list = list(user_input)
+dict = {}
+
+for i in user_input:
+    if i in dict:
+        dict[i] += 1
+    else:
+        dict[i] = 1
+print(dict)
+
+ 
+
